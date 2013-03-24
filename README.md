@@ -9,17 +9,15 @@ Sometimes I wanted to manipulate maps and iterate through values, using the keys
     (map-map inc {:a 1 :b 3})
     ;;=> {:a 2 :b 4}
 
-
     (with-map-> {:a [1 2 3] :b [4 5 6]}
       (nth 1)
       inc)
-   ;;=> {:a 3 :b 6}
-
+    ;;=> {:a 3 :b 6}
    
     (with-map->> {:a [1 2 3] :b [4 5 6]}
       (reduce +)
       inc)
-   ;;=> {:a 7 :b 16}
+    ;;=> {:a 7 :b 16}
 
    
 ## License
