@@ -7,6 +7,7 @@ Sometimes map manipulation can be cumbersome, so I designed this small library f
 
 ## Usage
 Examples
+
     (require '[map-lib.core :as ml])
 
     (ml/map-vals inc {:a 1 :b 3})
